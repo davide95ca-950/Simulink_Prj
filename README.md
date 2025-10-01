@@ -21,8 +21,8 @@ Design and validation of automatic controllers for altitude holding and pitch st
   - `Ci.mat` and other `.mat` files — workspace data and simulation parameters.  
   - `MatlabFunction2F.txt` — supporting function for non-LTI simulation.  
 
-- `docs/artifacts/` — archived project data (`.rar`) and additional simulation outputs.  
-- `docs/screenshots/` — exported images showing Simulink schematics, scopes, and analysis results.  
+- `docs/artifacts/` — archived project data (`.rar`).  
+- `docs/screenshots/` — exported images showing Simulink schematics, scopes and  results.  
 
 ### How to use
 1. Run `controlloFDT.m` in MATLAB (R2022b or later).  
