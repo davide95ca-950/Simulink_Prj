@@ -9,20 +9,20 @@ Design and validation of automatic controllers for altitude holding and pitch st
 
 ### Included files
 
-- `src/` —
-  
 
-- `Aeromobile2E.slx`, `Aeromobile2F.slx` — Simulink models of the aircraft dynamics  
-  - **E**: LTI system (linear time-invariant)  
-  - **F**: non-LTI system  
-- `controlloFDT.m` — main script: builds transfer functions from state-space, applies the controllers and runs the simulations.  
-- `controlloFDTsym.m` — symbolic derivation of the transfer function from A, B, C, D matrices.  
-- `C_A.m` — controller ensuring near-perfect step reference tracking.  
-- `C_B1.m`, `C_B2.m` — controllers with oscillations within 10%.
+- `src/` — Simulink models and MATLAB scripts:
+  - `Aeromobile2E.slx`, `Aeromobile2F.slx` — aircraft dynamics models  
+    - **E**: LTI system (linear time-invariant)  
+    - **F**: non-LTI system  
+  - `controlloFDT.m` — builds transfer functions from state-space, applies controllers, runs simulations.  
+  - `controlloFDTsym.m` — symbolic derivation of transfer functions from A, B, C, D matrices.  
+  - `C_A.mat` — controller ensuring near-perfect step reference tracking.  
+  - `C_B1.mat`, `C_B2.mat` — controllers with oscillations within 10%.  
+  - `Ci.mat` and other `.mat` files — workspace data and simulation parameters.  
+  - `MatlabFunction2F.txt` — supporting function for non-LTI simulation.  
 
-- 
-- - `docs/artifacts/` — archived project data (`.rar`) and additional simulation artifacts.  
-- `docs/screenshots/` — exported images showing model schematics, simulation scopes, and analysis results.
+- `docs/artifacts/` — archived project data (`.rar`) and additional simulation outputs.  
+- `docs/screenshots/` — exported images showing Simulink schematics, scopes, and analysis results.  
 
 ### How to use
 1. Run `controlloFDT.m` in MATLAB (R2022b or later).  
