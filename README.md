@@ -1,3 +1,5 @@
+![check](https://github.com/davide95ca-950/Simulink_Prj/actions/workflows/check.yml/badge.svg)
+
 # Simulink_Prj
 
 ## Aircraft Control (MATLAB/Simulink)_ENG
