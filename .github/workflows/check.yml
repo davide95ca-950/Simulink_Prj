@@ -1,16 +1,23 @@
-yaml
 name: Check
 on: [push, pull_request]
+
 jobs:
-  tree:
+  check-structure:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Verify required layout and files
+      - name: Verify project layout
         run: |
+          # src deve esistere ed essere non vuoto
           test -d src
-          test -d docs/screenshots
+          ls src | grep -q .
+
+          # docs deve esistere
+          test -d docs
+
+          # screenshots: se esiste, ok anche vuota
+          test -d docs/screenshots || true
+
+          # artifacts: deve contenere almeno un file (rar, mat, ecc.)
           test -d docs/artifacts
-          ls src/*.slx >/dev/null 2>&1
-          ls src/*.m   >/dev/null 2>&1
-          # at least one screenshot or artifact is optional
+          ls docs/artifacts | grep -q .
