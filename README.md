@@ -31,3 +31,10 @@ Design and validation of automatic controllers for altitude holding and pitch st
 4. Open the corresponding Simulink model (`Aeromobile2E.slx` or `Aeromobile2F.slx`) depending on the system type (LTI or non-LTI).  
 5. Start the simulation in Simulink (**RUN**).  
 6. Verify the results through the scopes embedded in the Simulink model.  
+
+### Notes
+- Repository contains source models and scripts only; binaries are excluded.  
+- Documentation is in English; block annotations may remain in Italian.  
+
+### License
+MIT
