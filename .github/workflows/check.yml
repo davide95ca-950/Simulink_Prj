@@ -8,16 +8,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify project layout
         run: |
-          # src deve esistere ed essere non vuoto
+          
           test -d src
           ls src | grep -q .
 
-          # docs deve esistere
+        
           test -d docs
 
-          # screenshots: se esiste, ok anche vuota
+         
           test -d docs/screenshots || true
 
-          # artifacts: deve contenere almeno un file (rar, mat, ecc.)
+          
           test -d docs/artifacts
           ls docs/artifacts | grep -q .
