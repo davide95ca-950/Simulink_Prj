@@ -1,0 +1,14 @@
+# MATLAB/Simulink build cache
+*.asv
+*.autosave
+*.slxc
+slprj/
+*.mex*
+*.fig
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Optional: ignore generated data locally
+# *.mat
