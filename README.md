@@ -8,13 +8,21 @@
 Design and validation of automatic controllers for altitude holding and pitch stabilization on a simplified aircraft model, using MATLAB and Simulink.  
 
 ### Included files
+
+- `src/` —
+  
+
 - `Aeromobile2E.slx`, `Aeromobile2F.slx` — Simulink models of the aircraft dynamics  
   - **E**: LTI system (linear time-invariant)  
   - **F**: non-LTI system  
 - `controlloFDT.m` — main script: builds transfer functions from state-space, applies the controllers and runs the simulations.  
 - `controlloFDTsym.m` — symbolic derivation of the transfer function from A, B, C, D matrices.  
 - `C_A.m` — controller ensuring near-perfect step reference tracking.  
-- `C_B1.m`, `C_B2.m` — controllers with oscillations within 10%.  
+- `C_B1.m`, `C_B2.m` — controllers with oscillations within 10%.
+
+- 
+- - `docs/artifacts/` — archived project data (`.rar`) and additional simulation artifacts.  
+- `docs/screenshots/` — exported images showing model schematics, simulation scopes, and analysis results.
 
 ### How to use
 1. Run `controlloFDT.m` in MATLAB (R2022b or later).  
